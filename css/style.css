@@ -1,0 +1,35 @@
+:root {
+    --naranja0: #FFA07A;
+    --morado0: #9370DB;
+    --rosado0: #FF69B4;
+    --rosado_fondo: #FFC0CB;
+    --morado_fondo: #E6E6FA;
+}
+
+html {
+    font-size: 62.5% ;
+}
+body {
+    font-size:16px;
+}
+.letter_text {
+    font-family: "Chilanka", cursive;
+}
+.letter_titulos {
+    font-family: "DynaPuff";
+    font-weight: 400;
+}
+.titulo {
+    text-align: center;
+    color: var(--morado0);
+    font-size: 3.8rem;
+
+}
+.titulo span {
+    text-align: center;
+    color: var(--morado0);
+    font-size: 2rem;
+}
+p {
+    font-family: "Chilanka", cursive;
+}
