@@ -33,3 +33,28 @@ body {
 p {
     font-family: "Chilanka", cursive;
 }
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+.nav-bg { 
+    background-color: var(--morado_fondo);
+}   
+
+.navegacion_principal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navegacion_principal a {
+    color: var(--morado0);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.navegacion_principal a:hover {
+    background-color: var(--rosado_fondo);
+}
+.navegacion_principal a:focus {
+    background-color: var(--rosado_fondo);
+}
