@@ -4,10 +4,16 @@
     --rosado0: #FF69B4;
     --rosado_fondo: #FFC0CB;
     --morado_fondo: #E6E6FA;
+    --rosado_fondo_transparente: rgba(255, 192, 203, 0.5);
+    --morado1: #8A2BE2;
 }
 
 html {
-    font-size: 62.5% ;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body {
     font-size:16px;
@@ -19,11 +25,20 @@ body {
     font-family: "DynaPuff";
     font-weight: 400;
 }
-.titulo {
-    text-align: center;
-    color: var(--morado0);
+h1 {
     font-size: 3.8rem;
-
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+.titulo {
+    color: var(--morado0);
 }
 .titulo span {
     text-align: center;
@@ -51,6 +66,9 @@ p {
         flex-direction: row;
         justify-content: space-evenly;
     }
+    .boton {
+        width: auto;
+    }
 }
 .navegacion_principal a {
     display: block;
@@ -66,4 +84,40 @@ p {
 }
 .navegacion_principal a:focus {
     background-color: var(--rosado_fondo);
+}
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: var(--rosado_fondo_transparente);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenido-hero h2, .contenido-hero p {
+    color: var(--morado1);
+}
+
+.boton {
+    background-color: var(--morado_fondo);
+    color: var(--morado1);
+    padding: 1rem 5.5rem;
+    margin-top:  1rem;
+    font-size: 1.5rem;
+    font-family: "DynaPuff";
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    width: 85%;
 }
